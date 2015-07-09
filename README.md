@@ -1,15 +1,9 @@
 BOOTSTRAP STYLEGUIDE
 ==============================
 
-A starting point for crafting living style guides for Bootstrap-based projects.
+A starting point for crafting living style guides for Drupal Bootstrap sub-theme.
 
-Based on Brett Jankord's [Style Guide Boilerplate](http://brettjankord.com/projects/style-guide-boilerplate/)
-
-[Read More about the project](http://www.google.com/‎)
-
-[Demo](http://www.google.com/)
-
-*Note: Sample patterns have been included in the demo. Your site will have it's own unique patterns.*
+*Note: Sample patterns have been included in the demo.*
 
 ![Bear vs wolf](http://i.ytimg.com/vi/SrXGUybN_Qw/hqdefault.jpg)
 
@@ -17,15 +11,16 @@ Based on Brett Jankord's [Style Guide Boilerplate](http://brettjankord.com/proje
 
 ### Download the Style Guide Boilerplate
 You can clone, fork, or download the repo from GitHub.
-Once you have the files for **Style Guide Boilerplate**, you'll create a directory on your site for them.
 
 ### Set up your project name
 Open the `index.php` file, and look for line 2, where it says:
 `$project_name = "Project";`
 Put your own project name between the quotation marks
 
-### Hook up your own CSS into the style guide
-In the `<head>` of **Style Guide Boilerplate** are custom styles for the boilerplate itself. These have all been prefixed with sg- so they hopefully shouldn't cause any conflicts with your website's own styles. You need to compile the styleguide.less file with your bootstrap variables.less file and mixins
+### Add your sub-theme CSS into the style guide
+In the `<head>` of **Style Guide** are custom styles for the boilerplate itself.
+You need to compile the ```styleguide.less``` file with your bootstrap ```variables.less``` file and mixins.
+Selectors are predefined with sg- so they hopefully shouldn't cause any conflicts with your website's own styles.
 
 Below the custom styles for the boilerplate, you will add in your own custom stylesheet(s) which you use on your live site.
 
@@ -33,14 +28,6 @@ Below the custom styles for the boilerplate, you will add in your own custom sty
     <!-- Replace below stylesheet with your own stylesheet -->
   	<link rel="stylesheet" href="css/sub-theme.css">
 
-
-### Set up a directory on your site for the style guide
-I recommend creating a directory named `style-guide` in your site's root directory. I think it would be awesome if I could go to `anysite.com/style-guide/` and check out that site's style guide.
-
-
-### Review your live site CSS
-You should be able to go to `yoursite.com/style-guide/` and see how your live site's CSS affects base elements.
-The last step is creating your sites custom patterns/modules.
 
 ### Create custom documentation files
 You can create an intro or other documentation files. Just create an html file with the contents, styled in html, and upload the file as `document-title.html` into the `docs` directory inside of your `style-guide` directory.
